@@ -6,9 +6,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer"
 import SideBar from "./components/SideBar";
 
+import './App.css';
+
 import {getCategories} from "./Redux/slices/categorySlice"
-
-
 
 function App() {
   const dispatch = useDispatch();
@@ -16,8 +16,6 @@ function App() {
   useEffect(() => {
     dispatch(getCategories());
   }, [dispatch]);
-
-
 
   return (
     <div className='app'>

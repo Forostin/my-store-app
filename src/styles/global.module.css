@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    color: #fff;
+    color: #490404;
     font-weight: 500;
     padding-bottom: 20px;
   }
@@ -86,7 +86,7 @@ body {
   }
   
   button {
-    background: var(--violet-dark);
+    background: violet;
     border-radius: 6px;
     padding: 9px 20px;
     font-weight: 600;
@@ -95,7 +95,7 @@ body {
   }
   
   button:hover {
-    background: var(--violet);
+    background: gray;
   }
   
   h2 {

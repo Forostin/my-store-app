@@ -1,7 +1,9 @@
+import Poster from "../components/Poster";
+
 const Home = ()=>{
     return (
     <>
-    <div>Home</div>
+     <Poster />
     </>
       );
   }

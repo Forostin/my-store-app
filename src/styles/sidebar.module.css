@@ -23,18 +23,19 @@
 /* ================= */
   
   .link {
-    color: var(--dark-sea);
+    color: rgb(70, 19, 3);
     font-size: 14px;
     line-height: 17px;
     text-transform: capitalize;
+    text-decoration-line: none
   }
   
   .link:hover {
-    color: var(--white);
+    color: white;
   }
   
   .link.active {
-    color: var(--violet);
+    color: violet;
   }
   
   .footer {
