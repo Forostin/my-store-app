@@ -4,10 +4,11 @@
     justify-content: space-between;
     margin-top: 20px;
     padding: 24px;
+    background-color:  rgb(71, 71, 71);
   }
   
   .logo {
-    width: 61px;
+    width: 40px;
   }
   
   .logo a {
@@ -16,7 +17,7 @@
   
   .rights {
     color: rgb(245, 241, 241);
-    font-size: 15px;
+    font-size: 20px;
     line-height: 15px;
   }
   

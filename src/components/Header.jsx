@@ -38,7 +38,7 @@ const Header = ()=>{
             <Link to="ROUTES.CART" className={styles.favourites} >
                 <img className={styles.iconCart} src={cartImag} />
             </Link>
-            <span><h3>2</h3></span>
+            <div className={styles.countCart}>2</div>
           </div>
          </div>
        </div>
