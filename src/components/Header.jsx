@@ -2,17 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import styles from '../styles/header.module.css'
-import logo from "../assets/images/28699644_christmas_2012_new_6457.jpg";
+import logo from "../assets/icons/free-icon-letter-a-5906711.png";
 import heart from "../assets/icons/icon-2445095_640.png";
 import cartImag from "../assets/icons/shopping-cart-297750_640.png"
 
 const Header = ()=>{
     return (
-    <>
-       <div className={styles.header}>
-        <div >
+      <div className={styles.header}>
+        <div className="headerLogo">
+             <p>REACT</p>
           <Link to="ROUTES.HOME">
              <img className={styles.logo} src={logo} alt='stuff' />
+            <p>Alex Store</p>
           </Link>
         </div>
         <form className={styles.form}>
@@ -22,7 +23,7 @@ const Header = ()=>{
               </div>
           </div>
           <div >
-            <input className={styles.input} type="search" name="search" placeholder="Search ..."></input>
+            <input className={styles.input} type="text" name="search" placeholder="Search ..."></input>
           </div>
           <div className={styles.box}></div>
          </form>
@@ -37,11 +38,11 @@ const Header = ()=>{
             <Link to="ROUTES.CART" className={styles.favourites} >
                 <img className={styles.iconCart} src={cartImag} />
             </Link>
-            <span ><h3>2</h3></span>
+            <span><h3>2</h3></span>
           </div>
          </div>
        </div>
-    </>
+    
     );
   }
   

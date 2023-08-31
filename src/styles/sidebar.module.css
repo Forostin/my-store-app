@@ -1,11 +1,12 @@
 .sidebar {
     width: 15%;
-    min-width: 160px;
+    min-width: 120px;
     padding: 24px;
-    height: 423px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(135, 149, 145);
+    /* background-color: rgb(91, 93, 92); */
+    background-color:  rgb(71, 71, 71);
   }
   
   .title {
@@ -23,15 +24,15 @@
 /* ================= */
   
   .link {
-    color: rgb(70, 19, 3);
-    font-size: 14px;
+    color: white;
+    font-size: 18px;
     line-height: 17px;
     text-transform: capitalize;
     text-decoration-line: none
   }
   
   .link:hover {
-    color: white;
+    color: rgb(171, 234, 146);
   }
   
   .link.active {

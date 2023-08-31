@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import styles from '../styles/footer.module.css'
-import logo from "../assets/images/28699644_christmas_2012_new_6457.jpg";
+import logo from "../assets/icons/free-icon-letter-a-5906711.png";
 import iconFb from "../assets/icons/fb_icon-icons.com_66689.png";
 import iconYt from "../assets/icons/youtube_logo_icon_147199.png";
 

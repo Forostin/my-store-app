@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer"
 import SideBar from "./components/SideBar";
 
+
 import './App.css';
 
 import {getCategories} from "./Redux/slices/categorySlice"
@@ -22,8 +23,9 @@ function App() {
       <Header />
       <div className="container">
         <SideBar />
+        <AppRoutes />
       </div>
-      <AppRoutes />
+     
       <Footer />
       <h1>Hello !</h1>
     </div>
