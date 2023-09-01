@@ -11,7 +11,8 @@
   }
   
   .product {
-    background: var(--bg);
+    /* background: var(--bg); */
+    background-color: rgb(71, 71, 71);
     border-radius: 8px;
     overflow: hidden;
     width: calc(100% / 5 - 20px);
@@ -46,7 +47,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    color: var(--grey);
+    color: rgb(178, 162, 162);
     text-transform: uppercase;
     margin-top: 5px;
     margin-bottom: 28px;
@@ -69,16 +70,16 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: var(--violet-dark);
+    color: violet;
   }
   
-  .oldPrice {
+  /* .oldPrice {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
     text-decoration-line: line-through;
     color: var(--dark-sea);
-  }
+  } */
   
   .purchases {
     color: var(--dark-sea);

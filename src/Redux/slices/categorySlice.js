@@ -8,7 +8,7 @@ export const getCategories = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       //  const res = await axios('https://fakestoreapi.com/products/categories');   
-      const res = await axios(`${BASE_URL}/categories?offset=0&limit=6`);
+      const res = await axios(`${BASE_URL}/categories?offset=0&limit=5`);
       return res.data;
     } catch (err) {
       console.log(err);
@@ -29,7 +29,6 @@ const categoriesSlice = createSlice({
     });
     builder.addCase(getCategories.fulfilled, (state, { payload }) => {
       state.list = payload;
-      console.log(state.list)
       state.isLoading = false;
     });
     builder.addCase(getCategories.rejected, (state) => {

@@ -5,12 +5,12 @@ import { NavLink } from "react-router-dom";
 import styles from '../styles/sidebar.module.css'
 
 const Sidebar = () => {
-  const { list } = useSelector(({ categories }) => categories);
+   const { list } = useSelector(({ categories }) => categories);
    
-  // console.log(list)
+  console.log(list)
   return (
     <section className={styles.sidebar}>
-      <div className={styles.title}>Категории</div>
+      <div className={styles.title}>Категоріі</div>
       <nav>
         <ul className={styles.menu}>
           {list.map(({ id, name }) => (
@@ -43,7 +43,7 @@ const Sidebar = () => {
         </ul>
       </nav>
 
-      <div className={styles.footer}>
+      {/* <div className={styles.footer}>
         <a href="/help" target="_blank" className={styles.link}>
           Help
         </a>
@@ -55,7 +55,7 @@ const Sidebar = () => {
         >
           Terms & Conditions
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

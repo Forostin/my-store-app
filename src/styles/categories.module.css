@@ -1,23 +1,26 @@
 .section {
     width: 100%;
     padding: 22px;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .list {
     margin-top: 24px;
+    width: 100%;
     display: flex;
-    column-gap: 20px;
+    justify-content: space-around;
   }
   
-  .item {
+  /* .item {
     width: calc(100% / 5);
     overflow: hidden;
     text-align: center;
-  }
+  } */
   
   .image {
-    width: 100%;
-    height: 230px;
+    width: 150px;
+    height: 150px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,4 +31,5 @@
     font-size: 20px;
     line-height: 24px;
     margin-top: 20px;
+    text-align: center;
   }

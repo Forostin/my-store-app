@@ -6,8 +6,12 @@ import logo from "../assets/icons/free-icon-letter-a-5906711.png";
 import heart from "../assets/icons/icon-2445095_640.png";
 import cartImag from "../assets/icons/shopping-cart-297750_640.png"
 
+import CategoriesHeader from "./CategoriesHeader";
+
+
 const Header = ()=>{
     return (
+    <div className={styles.wrap}>
       <div className={styles.header}>
         <div className="headerLogo">
              <p>REACT</p>
@@ -40,8 +44,12 @@ const Header = ()=>{
             </Link>
             <div className={styles.countCart}>2</div>
           </div>
-         </div>
-       </div>
+         </div>    
+        </div>
+         <div className={styles.categories}>
+            <CategoriesHeader /> 
+         </div>     
+      </div>
     
     );
   }

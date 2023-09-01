@@ -1,11 +1,10 @@
 .sidebar {
     width: 15%;
     min-width: 120px;
-    padding: 24px;
-    height: 400px;
+    padding: 3%;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(91, 93, 92); */
     background-color:  rgb(71, 71, 71);
   }
   
@@ -15,18 +14,17 @@
   }
   
   .menu {
-    margin-top: 32px;
+     /* margin-top: 13%; */
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     row-gap: 12px;
   }
-
-/* ================= */
   
   .link {
     color: white;
     font-size: 18px;
-    line-height: 17px;
+    line-height: 50px;
     text-transform: capitalize;
     text-decoration-line: none
   }
