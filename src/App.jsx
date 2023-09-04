@@ -21,11 +21,10 @@ function App() {
   }, [dispatch]);
 
   // const {list} = useSelector((products) => products);
-  const {
-    products: { list, filtered },
-
-    // categories,
-  } = useSelector((state) => state);
+  // const {
+  //   products: { list },
+  //   // categories,
+  // } = useSelector((state) => state);
   const  categories = useSelector((categories) => categories);
 
   return (
@@ -35,7 +34,7 @@ function App() {
         <SideBar />
         <AppRoutes />
       </div>
-      <Products products={list} amount={5} title="В тренді" />
+      {/* <Products products={list} amount={5} title="В тренді" /> */}
       <Categories products={categories} title="Категоріі" />
       <Footer />
       <h1>Hello !</h1>

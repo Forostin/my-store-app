@@ -7,7 +7,7 @@ import styles from '../styles/sidebar.module.css'
 const Sidebar = () => {
    const { list } = useSelector(({ categories }) => categories);
    
-  console.log(list)
+  // console.log(list)
   return (
     <section className={styles.sidebar}>
       <div className={styles.title}>Категоріі</div>
