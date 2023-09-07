@@ -26,17 +26,12 @@ const Home = ()=>{
     }
   }, [ dispatch, list.length ]);
 
- 
-console.log(filtered)
-
-
-
   return (
     <div className={styles.wrap}>
          <Poster />
          <Products products={list} amount={5} title="Trending" />
          <Banner />   
-         <Products products={filtered} amount={5} title="менше ніж 700$" />
+         <Products products={filtered} amount={5} title="менше ніж 800$" />
     </div>
     );
   }

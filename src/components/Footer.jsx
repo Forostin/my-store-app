@@ -6,12 +6,14 @@ import logo from "../assets/icons/free-icon-letter-a-5906711.png";
 import iconFb from "../assets/icons/fb_icon-icons.com_66689.png";
 import iconYt from "../assets/icons/youtube_logo_icon_147199.png";
 
+import { ROUTES } from "../utils/routes";
+
 const Footer = ()=>{
     return (
     <>
        <section className={styles.footer}>
          <div >
-          <Link to="ROUTES.HOME">
+          <Link to={ROUTES.HOME}>
              <img className={styles.logo} src={logo}  alt='stuff'/>
           </Link>
          </div>

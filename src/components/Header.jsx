@@ -7,6 +7,7 @@ import heart from "../assets/icons/icon-2445095_640.png";
 import cartImag from "../assets/icons/shopping-cart-297750_640.png"
 
 import CategoriesHeader from "./CategoriesHeader";
+import { ROUTES } from "../utils/routes";
 
 
 const Header = ()=>{
@@ -15,7 +16,7 @@ const Header = ()=>{
       <div className={styles.header}>
         <div className="headerLogo">
              <p>REACT</p>
-          <Link to="ROUTES.HOME">
+          <Link to={ROUTES.HOME}>
              <img className={styles.logo} src={logo} alt='stuff' />
             <p>Alex Store</p>
           </Link>
@@ -33,13 +34,13 @@ const Header = ()=>{
          </form>
          <div className={styles.containerIcons}>
           <div className={styles.account}>
-            <Link to="ROUTES.HOME" className={styles.favourites}>
+            <Link to={ROUTES.HOME} className={styles.favourites}>
                <img className={styles.iconHead} src={heart} />
             </Link>
           </div>
        
           <div className={styles.account}>
-            <Link to="ROUTES.CART" className={styles.favourites} >
+            <Link to={ROUTES.CART} className={styles.favourites} >
                 <img className={styles.iconCart} src={cartImag} />
             </Link>
             <div className={styles.countCart}>2</div>

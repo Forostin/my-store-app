@@ -2,5 +2,5 @@ export const ROUTES = {
     HOME : '/',
     CART : '/cart',
     CATEGORY: '/categories/:id',
-    PRODUCTS: '/products'
+    PRODUCT: '/products/:id'
 }

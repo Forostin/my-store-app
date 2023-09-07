@@ -29,7 +29,7 @@ const productsSlice = createSlice({
   
   reducers: {
     filterByPrice: (state) => {
-      state.filtered = state.list.filter(({price}) => price < 700);
+      state.filtered = state.list.filter(({price}) => price < 800);
     }
   },
   extraReducers: (builder) => {
