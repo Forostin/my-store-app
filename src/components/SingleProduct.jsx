@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { useGetProductQuery } from "../Redux/slices/apiSlices/apiSlice"
-// import { getRelatedProducts } from "../Redux/slices/productsSlice";
+import { getRelatedProducts } from "../Redux/slices/productsSlice";
 
 import { ROUTES } from "../utils/routes";
 
@@ -25,19 +25,19 @@ const SingleProduct = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoading, isFetching, isSuccess]);
 
-  // useEffect(() => {
-  //   if (!data || !list.length) return;
+  useEffect(() => {
+    if (!data || !list.length) return;
 
-  //   dispatch(getRelatedProducts(data.category.id));
-  // }, [data, dispatch, list.length]);
+    dispatch(getRelatedProducts(data.category.id));
+  }, [data, dispatch, list.length]);
 
   return !data ? (
     <section className="preloader">Loading...</section>
   ) : (
-    <>
+    <div>
       <Product {...data} />
       <Products products={related} amount={5} title="Related products" />
-    </>
+    </div>
   );
 };
 
