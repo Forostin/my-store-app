@@ -22,7 +22,9 @@ const userSlice = createSlice({
   initialState: {
     currentUser: null,
     cart: [],
-    isLoading: false
+    isLoading: false,
+    forumType: "singup",
+    showForm: false
   },
 reducers: { 
   addItemToCart: (state, { payload }) => {
@@ -38,7 +40,11 @@ reducers: {
     } else newCart.push({ ...payload, quantity: 1 });
 
     state.cart = newCart;
-  }},
+  },
+  toggleForm: (state, { payload }) => {
+    state.showForm = payload;
+  }
+},
   extraReducers: (builder) => {
     // builder.addCase(getCategories.pending, (state) => {
     //   state.isLoading = true;
@@ -52,5 +58,5 @@ reducers: {
   }
 });
 
-export const { addItemToCart } = userSlice.actions 
+export const { addItemToCart , toggleForm} = userSlice.actions 
 export default userSlice.reducer;

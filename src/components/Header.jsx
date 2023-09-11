@@ -8,9 +8,18 @@ import cartImag from "../assets/icons/shopping-cart-297750_640.png"
 
 import CategoriesHeader from "./CategoriesHeader";
 import { ROUTES } from "../utils/routes";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleForm } from "../Redux/slices/userSlice"
 
 
 const Header = ()=>{
+  const dispatch = useDispatch()
+  const { carrentUser}= useSelector(({user})=> user);
+  const handleClick = ()=>{
+    if(!carrentUser){
+      dispatch( toggleForm(true) )
+    }
+  }
     return (
     <div className={styles.wrap}>
       <div className={styles.header}>
@@ -23,7 +32,7 @@ const Header = ()=>{
         </div>
         <form className={styles.form}>
           <div className={styles.info}>
-              <div className={styles.user}>
+              <div className={styles.user} onClick={handleClick}>
                  <div className={styles.avatar}>User Avatar</div>
               </div>
           </div>

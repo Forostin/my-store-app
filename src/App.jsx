@@ -10,6 +10,7 @@ import Categories from "./components/Categories";
 
 import {getCategories} from "./Redux/slices/categorySlice"
 import { getProducts } from "./Redux/slices/productsSlice";
+import UserForm from "./components/userForm";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className='app'>
       <Header />
+      <UserForm />
       <div className="container">
         <SideBar />
         <AppRoutes />
