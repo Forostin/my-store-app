@@ -59,13 +59,18 @@
   .close svg {
     width: 20px;
     height: 20px;
-    stroke: var(--dark-sea);
+    stroke: white;
   }
   
   .close:hover svg {
     stroke: #fff;
   }
   
+  .icon{
+    width: 20px;
+    height: 20px;
+  }
+
   .link {
     font-size: 13px;
     color: var(--dark-sea);

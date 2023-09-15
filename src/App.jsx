@@ -39,7 +39,7 @@ function App() {
       {/* <Products products={list} amount={5} title="В тренді" /> */}
       <Categories products={categories} title="Категоріі" />
       <Footer />
-      <h1>Hello !</h1>
+     
     </div>
      );
 }
