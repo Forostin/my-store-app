@@ -60,7 +60,7 @@ const Header = ()=>{
                 : !data.length
                 ? "No results"
                 : data.map(({ title, images, id }) => {
-                  console.log(title)
+                  // console.log(title)
                     return (
                       <Link
                         key={id}

@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer"
 import SideBar from "./components/SideBar";
 import Products from "./components/Products";
-import Categories from "./components/Categories";
+import Categories from "./components/Categories/Categories";
 
 import {getCategories} from "./Redux/slices/categorySlice"
 import { getProducts } from "./Redux/slices/productsSlice";

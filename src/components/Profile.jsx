@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import { updateUser } from "../Redux/slices/";
+import { updateUser } from "../Redux/slices/userSlice";
 
 import styles from "../styles/profile.module.css"
 
@@ -100,7 +100,7 @@ const Profile = ()=>{
     };
   
 export default Profile
-e
+
  
 
 
