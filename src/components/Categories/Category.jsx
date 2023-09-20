@@ -13,8 +13,8 @@ const Category = () => {
 //   console.log(list)
     const defaultValues = {
       title: "",
-      price_min: 0,
-      price_max: 0,
+      price_min: 1,
+      price_max: null,
     };
   
     const defaultParams = {
