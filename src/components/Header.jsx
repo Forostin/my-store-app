@@ -18,14 +18,10 @@ const Header = ()=>{
   const navigate = useNavigate()
   const [searchValue, setSearchValue] = useState('');
 
-  const { currentUser }= useSelector(({user})=> user);
-
-  
+  const { currentUser, cart }= useSelector(({user})=> user);
 
   // const [values, setValues] = useState({ name: "Guest", avatar: AVATAR });
-
   const { data, isLoading } = useGetProductsQuery({ title: searchValue });
-
 
   useEffect(() => {
     if (!currentUser) return;
@@ -42,7 +38,13 @@ const Header = ()=>{
     setSearchValue(value);
   };
 
-    return (
+  let currentQuantity = null
+  cart.map((item) => {
+    currentQuantity += item.quantity; 
+  })  
+
+
+  return (
     <div className={styles.wrap}>
       <div className={styles.header}>
         <div className="headerLogo">
@@ -97,8 +99,6 @@ const Header = ()=>{
             />
           </div>
           
-
-          
          </form>
          <div className={styles.containerIcons}>
           <div className={styles.account}>
@@ -111,7 +111,8 @@ const Header = ()=>{
             <Link to={ROUTES.CART} className={styles.favourites} >
                 <img className={styles.iconCart} src={cartImag} />
             </Link>
-            <div className={styles.countCart}>2</div>
+          <div className={styles.countCart} >{currentQuantity}</div>
+        
           </div>
          </div>    
         </div>
@@ -119,8 +120,7 @@ const Header = ()=>{
             <CategoriesHeader /> 
          </div> 
              
-      </div>
-    
+      </div>    
     );
   }
   

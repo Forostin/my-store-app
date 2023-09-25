@@ -14,7 +14,7 @@ const Category = () => {
     const defaultValues = {
       title: "",
       price_min: 1,
-      price_max: null,
+      price_max: 1000,
     };
   
     const defaultParams = {

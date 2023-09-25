@@ -60,7 +60,7 @@ const userSlice = createSlice({
     cart: [],
     isLoading: false,
     formType: "singup",
-    showForm: false
+    showForm: false,
   },
 
 
