@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleForm } from "../Redux/slices/userSlice"
 import { useGetProductsQuery } from "../Redux/slices/apiSlices/apiSlice";
 
+export let handleClick = null
 
 const Header = ()=>{
   const dispatch = useDispatch()
@@ -29,7 +30,7 @@ const Header = ()=>{
   //   // setValues(currentUser);
   }, [currentUser]);
 
-  const handleClick = () => {
+  handleClick = () => {
     if (!currentUser) dispatch(toggleForm(true));
     else navigate(ROUTES.PROFILE);
   };

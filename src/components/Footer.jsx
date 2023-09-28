@@ -12,8 +12,9 @@ const Footer = ()=>{
     return (
     <>
        <section className={styles.footer}>
-         <div >
-          <Link to={ROUTES.HOME}>
+         <div > 
+          <Link to={ROUTES.HOME}  className={styles.wrapLogo}> 
+             <p> на головну </p>
              <img className={styles.logo} src={logo}  alt='stuff'/>
           </Link>
          </div>

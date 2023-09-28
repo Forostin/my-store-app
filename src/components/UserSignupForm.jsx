@@ -22,9 +22,8 @@ const UserSignupForm = ({ toggleCurrentFormType, closeForm }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     const isNotEmpty = Object.values(values).every((val) => val);
-
     if (!isNotEmpty) return;
 
     dispatch(createUser(values));
@@ -35,7 +34,7 @@ const UserSignupForm = ({ toggleCurrentFormType, closeForm }) => {
     <div className={styles.wrapper}>
       <div className={styles.close} onClick={closeForm}>
         {/* <svg className={styles.icon}> */}
-          <img  src={closeButton} className={styles.icon} />
+          <img  src={closeButton} className={styles.icon} alt="" />
         {/* </svg> */}
       </div>
 

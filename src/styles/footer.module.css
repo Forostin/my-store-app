@@ -22,7 +22,7 @@
   }
   
   .rights a {
-    color: var(--violet);
+    color: violet;
   }
   
   .socials {
@@ -33,9 +33,10 @@
   .socials img {
     width: 34px;
     height: 34px;
-    
   }
   
-  .socials svg:hover {
-    fill: var(--violet);
+  .wrapLogo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }

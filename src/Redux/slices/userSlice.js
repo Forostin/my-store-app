@@ -48,9 +48,9 @@ export const loginUser = createAsyncThunk(
   } 
 );
 
-const addCurrentUser = (state, { payload }) => {
-  state.currentUser = payload;
-};
+// const addCurrentUser = (state, { payload }) => {
+//   state.currentUser = payload;
+// };
 
 
 const userSlice = createSlice({
